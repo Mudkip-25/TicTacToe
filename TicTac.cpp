@@ -4,8 +4,6 @@
 
 void TicTac::displayBoard()
 {
-
-
 	system("CLS");// clear whatever is on the screen
 	// iterate through a 2D array
 	for(int i = 1;i<4;i++)
@@ -27,8 +25,6 @@ void TicTac::askMove()
 	moveCount++;
 }
 
-
-
 void TicTac::setCharacter()
 {
 	if(moveCount%2 == 1)
@@ -40,11 +36,10 @@ void TicTac::setCharacter()
 	}
 }
 
-
 void TicTac::checkSquare()
 {
 	
-	if(board[column][row] == 32)
+	if(board[column][row] != 32)
 	{
 		moveCount--;
 		askMove();
@@ -64,12 +59,12 @@ void TicTac::checkWinner()
 				std::cout<<"PLAYER 1 WON!!!!!!";
 				exit(0);
 				
-				}	else
-					{
-					isGameFinished = true;
-					std::cout<<"PLAYER 2 WON!!!!!!";
-					exit(0);
-					}
+				}else
+				{
+				isGameFinished = true;
+				std::cout<<"PLAYER 2 WON!!!!!!";
+				exit(0);
+				}
 }
 
 void TicTac::checkWin()
@@ -105,5 +100,3 @@ void TicTac::checkDraw()
 		std::cout<<"\n**********\n**********\n**********\n";
 	}
 }
-
-
