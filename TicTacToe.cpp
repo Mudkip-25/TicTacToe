@@ -1,8 +1,4 @@
-
- //the engine has 1 move depth 
- 
- 
- 
+#include<conio.h>
 #include<iostream>
 
 #include "TicTacToe.h"
