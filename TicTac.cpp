@@ -44,7 +44,7 @@ void TicTac::setCharacter()
 void TicTac::checkSquare()
 {
 	
-	if(board[column][row] == 32)
+	if(board[column][row] == 32)//fix this NOT WORKING PROPERLY
 	{
 		moveCount--;
 		askMove();
