@@ -1,11 +1,7 @@
 #include<iostream>
+
 class TicTac{
-	public:
-	
-		
-		//1 the first player is human
-		//2 the first play is done by the computer
-		
+	public:	
 		bool isGameFinished = false;// when true exit the program
 		
 		int column = 0;//for printing the board and determining the moves
@@ -28,8 +24,6 @@ class TicTac{
 			{0,32,32,32},
 		};
 	
-
-
 	//methods
 
 	void displayBoard();// self explanatory
@@ -43,10 +37,6 @@ class TicTac{
 	void checkDraw();
 	void checkWin();
 	void checkWinner();//determine wether player1 won or player2
-
-
-	int analize();// decide where to place the figure  (machine move)
-
 	
 };
 
